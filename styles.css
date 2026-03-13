@@ -292,7 +292,7 @@ h1{
 .now-next{
   margin-top:14px;
   padding-top:12px;
-  border-top:1px solid rgba(0,0,0,.08);
+  border-top:0px solid rgba(0,0,0,.08);
 }
 
 .lunch-list{
@@ -502,7 +502,4 @@ h1{
   font-weight:800;
   vertical-align:middle;
   box-shadow:0 6px 14px rgba(0,119,200,.18);
-}
-.now-next .now-main{
-  font-size:18px;
 }
