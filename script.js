@@ -152,7 +152,11 @@ function selectConsultant(name){
   const days = schedule[name] || {};
   const lunch = lunchBreaks[name] || {};
   const lunchEntries = Object.entries(lunch).filter(([, slot]) => slot);
-  const turns = Object.values(days).reduce((sum, day) => sum + Object.keys(day || {}).length, 0);
+const turns = Object.values(days).reduce((sum, day) => {
+  return sum + Object.values(day || {}).filter(station =>
+    normalize(station) !== 'ora libera'
+  ).length;
+}, 0);
 
   totalTurns.textContent = turns;
   lunchCount.textContent = lunchEntries.length;
