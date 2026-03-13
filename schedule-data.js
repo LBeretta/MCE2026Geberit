@@ -1374,6 +1374,12 @@ window.LUNCH_BREAKS = {
     "GIOVEDÌ 26": "11:30-12:30",
     "VENERDÌ 27": "11:30-12:30"
   },
+  "CARAD": {
+    "MARTEDÌ 24": "",
+    "MERCOLEDÌ 25": "13:30-14:30",
+    "GIOVEDÌ 26": "",
+    "VENERDÌ 27": ""
+  },
   "PAV": {
     "MARTEDÌ 24": "11:30-12:30",
     "MERCOLEDÌ 25": "12:30-13:30",
