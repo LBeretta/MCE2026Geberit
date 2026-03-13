@@ -228,10 +228,10 @@ if(hasNext){
   nextBlock = `
     <div class="now-section now-next now-next-highlight">
       <div class="now-label">Turno successivo</div>
-      <div class="now-main">
-        <span class="next-icon-circle">→</span>
-        ${info.nextShift.station || '—'}
-      </div>
+<div class="now-main next-shift-text">
+  <span class="next-icon-circle">→</span>
+  ${info.nextShift.station || '—'}
+</div>
       <div class="now-sub">${info.activeDay} · ${info.nextShift.time}</div>
     </div>
   `;
