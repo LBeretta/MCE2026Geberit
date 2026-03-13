@@ -154,7 +154,7 @@ function selectConsultant(name){
   const lunchEntries = Object.entries(lunch).filter(([, slot]) => slot);
 const turns = Object.values(days).reduce((sum, day) => {
   return sum + Object.values(day || {}).filter(station =>
-    normalize(station) !== 'ora libera'
+    normalize(station) !== 'assente'
   ).length;
 }, 0);
 
